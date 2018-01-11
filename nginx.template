@@ -1,0 +1,8 @@
+events { }
+http {
+  server {
+    listen ${PORT};
+    server_tokens off;
+    return 301 https://www.decidim.barcelona$request_uri;
+  }
+}
